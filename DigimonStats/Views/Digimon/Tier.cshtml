@@ -1,0 +1,17 @@
+﻿@model DigimonStats.Models.DigimonHandler
+@{
+    ViewBag.Title = "Tier";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tier</h2>
+
+<ul>
+    @{ 
+        for (int i = 0; i < Model.AllDigimons.Count; i++)
+        {
+            <li>@Model.AllDigimons[i].Name</li>
+        }
+    }
+</ul>
+

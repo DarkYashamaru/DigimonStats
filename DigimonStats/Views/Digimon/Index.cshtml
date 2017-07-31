@@ -1,0 +1,82 @@
+﻿
+@model  DigimonStats.Models.Digimon
+@{
+    ViewBag.Title = "DigimonView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>No. @Model.Id - @Model.Name</h2>
+<h3>Rank @Model.Rank</h3>
+
+
+<div class="col-md-12 jumbotron">
+    <div class="row">
+        <div class="col-md-2">
+
+            <div class="row">
+                @Html.LabelFor(m => m.HP)
+                @Html.DisplayTextFor(m => m.HP)
+            </div>
+
+
+            <div class="row">
+                @Html.LabelFor(m => m.Atk)
+                @Html.DisplayTextFor(m => m.Atk)
+            </div>
+
+            <div class="row">
+
+                @Html.LabelFor(m => m.Def)
+                @Html.DisplayTextFor(m => m.Def)
+            </div>
+
+
+        </div>
+
+        <div class="col-md-2">
+
+            <div class="row">
+
+                @Html.LabelFor(m => m.SP)
+                @Html.DisplayTextFor(m => m.SP)
+            </div>
+
+            <div class="row">
+                @Html.LabelFor(m => m.Int)
+                @Html.DisplayTextFor(m => m.Int)
+            </div>
+
+
+
+            <div class="row">
+                @Html.LabelFor(m => m.Spd)
+                @Html.DisplayTextFor(m => m.Spd)
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    @Html.LabelFor(m => m.TotalStats)
+    @Html.DisplayTextFor(m => m.TotalStats)
+</div>
+
+<div class="row">
+    @Html.LabelFor(m => m.Tier)
+    @Html.DisplayTextFor(m => m.Tier)
+</div>
+
+<div class="row">
+    @Html.LabelFor(m => m.Skill)
+    @Html.DisplayTextFor(m => m.Skill)
+</div>
+
+
+
+
+
+
